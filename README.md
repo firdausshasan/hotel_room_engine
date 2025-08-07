@@ -1,59 +1,53 @@
-# SoftinnHotelBookingEngine
+# Hotel Room Booking Engine
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.4.
+![Room Listing Interface](/screenshots/app_screenshot1.png)
+![Booking Modal](/screenshots/app_screenshot2.png)
 
-## Development server
 
-To start a local development server, run:
+This Angular-based booking system that displays available hotel rooms and allows users to book them through a modal form was developed as a technical assessment for a Junior Frontend Developer position at Softinn Solutions.
 
-```bash
-ng serve
-```
+## How to Run
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Prerequisites
+- Node.js (v18 or later)
+- Angular CLI (v17 or later)
+- npm (comes with Node.js)
 
-## Code scaffolding
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/firdausshasan/hotel_booking_engine.git
+   cd softinn-hotel-booking-engine
+   ```
+2. Install dependencies:
+    ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   ng serve
+   ```
+4. Open your browser and navigate to:
+   ```bash
+   http://localhost:4200
+   ```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Design Decision
 
-```bash
-ng generate component component-name
-```
+### Architecture
+* Standalone Components: Used Angular 17+ standalone components for better modularity and reduced boilerplate
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+* Mock Service Layer: Created local mock services instead of external API calls for simplicity
 
-```bash
-ng generate --help
-```
+### UI/UX
+* Bootstrap 5: Chosen for responsive layout and pre-built components
 
-## Building
+* Card-Based Design: Each room is displayed as a card for clear visual hierarchy
 
-To build the project run:
+* Toast Notifications: Provides immediate feedback after bookings
 
-```bash
-ng build
-```
+## Why Some Suggested Alternatives Are Not Being Used
+* mockapi.io: Simplified development and testing
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+* Advanced Filtering: Scope limitation for the assessment
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
