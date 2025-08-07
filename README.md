@@ -1,10 +1,13 @@
 # Hotel Room Booking Engine
 
-![Room Listing Interface](/screenshots/app_screenshot1.png)
-*Figure 1: Room listing interface*
+<p align="center">
+  <img src="/screenshots/room-listing.png" width="45%" alt="Room Listing">
+  <img src="/screenshots/booking-modal.png" width="45%" alt="Booking Modal">  
+</p>
 
-![Booking Modal](/screenshots/app_screenshot2.png)
-*Figure 2: Booking form modal*
+<p align="center">
+  <em>Figure 1: Room Listing (Left) • Figure 2: Booking Modal (Right)</em>
+</p>
 
 
 This Angular-based booking system that displays available hotel rooms and allows users to book them through a modal form was developed as a technical assessment for a Junior Frontend Developer position at Softinn Solutions.
