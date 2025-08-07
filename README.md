@@ -17,7 +17,6 @@ This Angular-based booking system that displays available hotel rooms and allows
 ### Prerequisites
 - Node.js (v18 or later)
 - Angular CLI (v17 or later)
-- npm (comes with Node.js)
 
 ### Installation
 1. Clone the repository:
