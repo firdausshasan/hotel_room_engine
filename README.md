@@ -1,8 +1,8 @@
 # Hotel Room Booking Engine
 
 <p align="center">
-  <img src="/screenshots/room-listing.png" width="45%" alt="Room Listing">
-  <img src="/screenshots/booking-modal.png" width="45%" alt="Booking Modal">  
+  <img src="/screenshots/app_screenshot1.png" width="45%" alt="Room Listing">
+  <img src="/screenshots/app_screenshot2.png" width="45%" alt="Booking Modal">  
 </p>
 
 <p align="center">
