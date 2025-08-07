@@ -1,0 +1,28 @@
+<div class="modal-header">
+  <h4 class="modal-title">Book Room {{ room.name }}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+
+<div class="modal-body">
+  <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="guestName" class="form-label">Guest Name</label>
+      <input type="text" class="form-control" id="guestName" formControlName="guestName" required>
+    </div>
+    
+    <div class="mb-3">
+      <label for="checkInDate" class="form-label">Check-in Date</label>
+      <input type="date" class="form-control" id="checkInDate" formControlName="checkInDate" required>
+    </div>
+    
+    <div class="mb-3">
+      <label for="checkOutDate" class="form-label">Check-out Date</label>
+      <input type="date" class="form-control" id="checkOutDate" formControlName="checkOutDate" required>
+    </div>
+    
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="activeModal.dismiss()">Cancel</button>
+      <button type="submit" class="btn btn-primary" [disabled]="!bookingForm.valid">Confirm Booking</button>
+    </div>
+  </form>
+</div>

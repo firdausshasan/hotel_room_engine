@@ -1,0 +1,33 @@
+<div class="container py-4">
+  <h1 class="text-center mb-4">Hotel Room Booking</h1>
+
+  <!-- Temporary debug output -->
+  <div *ngIf="rooms.length === 0" class="alert alert-info">
+    Loading rooms... ({{ rooms.length }} loaded)
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    @for (room of rooms; track room.id) {
+      <div class="col">
+        <app-room-card 
+          [room]="room"
+          (bookingSuccess)="onBookingSuccess()">
+        </app-room-card>
+      </div>
+    }
+  </div>
+</div>
+
+@if (showToast) {
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast show">
+      <div class="toast-header bg-success text-white">
+        <strong class="me-auto">Success</strong>
+        <button type="button" class="btn-close btn-close-white" (click)="showToast = false"></button>
+      </div>
+      <div class="toast-body">
+        {{ toastMessage }}
+      </div>
+    </div>
+  </div>
+}

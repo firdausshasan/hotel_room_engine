@@ -1,0 +1,19 @@
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title">Room {{ room.name }}</h5>
+    <p class="card-text">
+      Type: {{ room.type }}<br>
+      Price: ${{ room.price }}<br>
+      Status: 
+      <span [class.text-success]="room.available" 
+            [class.text-danger]="!room.available">
+        {{ room.available ? 'Available' : 'Booked' }}
+      </span>
+    </p>
+    <button class="btn btn-primary" 
+            (click)="openBookingModal()" 
+            [disabled]="!room.available">
+      Book Room
+    </button>
+  </div>
+</div>
